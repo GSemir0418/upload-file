@@ -7,3 +7,31 @@ body,
 :root {
   height: 100%;
 }
+
+progress {
+  /* reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  /* add border radius */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  /* style the background (unfilled part) of the bar and add border radius*/
+  border-radius: 20px;
+  background-color: #f3f4f6;
+}
+
+progress::-webkit-progress-value {
+  /* style the filled part of the bar and add border radius */
+  border-radius: 20px;
+  background-color: #c4c8cf;
+}
+
+progress::-moz-progress-bar {
+  /* style the filled part of the bar in Mozilla and add border radius */
+  border-radius: 20px;
+  background-color: #c4c8cf;
+}
